@@ -4,8 +4,57 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 html {
   font-size: 100%;
+}
+
+body {
+  font-family: $family;
+  font-size: calc(1rem + 0.75vw);
+  font-weight: $regular;
+  line-height: 1.3;
+  color: $veryDarkBlue;
+}
+
+*,
+a {
+  color: $veryDarkBlue;
+  font-size: 1.25rem;
+}
+a {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 2.8125rem;
+}
+
+h2 {
+  font-size: 1rem;
+  @include breakpoint(large) {
+    font-size: 1.625rem;
+  }
+}
+
+p {
+  font-size: 0.75rem;
+  color: $grayishBlue;
+  @include breakpoint(large) {
+    font-size: 1.125rem;
+  }
+}
+
+button {
+  border: none;
+  background-color: red;
+  color: red;
+  width: 110px;
+  height: 40px;
+  font-family: $body;
+  font-weight: medium;
+  color: $softRed;
 }

@@ -1,0 +1,33 @@
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(medium) {
+      nav {
+        display: flex;
+        width: 460px;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: inline-block;
+  }
+
+  .logo {
+    width: 125px;
+    height: 15px;
+    object-fit: contain;
+    @include breakpoint(small) {
+      width: 150px;
+      height: 30px;
+    }
+  }
+}
