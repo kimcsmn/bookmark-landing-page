@@ -199,20 +199,48 @@ header .logo {
   }
 }
 
-.hero img {
-  width: 100%;
-  max-width: 570px;
+.hero .image {
+  position: relative;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
 }
 
 @media screen and (min-width: 999px) {
-  .hero img {
+  .hero .image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
+}
+
+.hero .image::after {
+  content: "";
+  position: absolute;
+  background-color: #5368df;
+  width: 80%;
+  height: 45vw;
+  border-radius: 50vw 0 0 50vw;
+  right: -20%;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 699px) {
+  .hero .image::after {
+    height: 40vw;
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .hero .image::after {
+    height: 22vw;
+  }
+}
+
+.hero .image img {
+  width: 100%;
+  max-width: 570px;
 }
 
 .hero .hero-body {

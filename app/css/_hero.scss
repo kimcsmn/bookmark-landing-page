@@ -11,12 +11,34 @@
     }
   }
 
-  img {
-    width: 100%;
-    max-width: 570px;
+  .image {
+    position: relative;
     order: -1;
     @include breakpoint(large) {
       order: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $softBlue;
+      width: 80%;
+      height: 45vw;
+      border-radius: 50vw 0 0 50vw;
+      right: -20%;
+      bottom: 0;
+      z-index: -1;
+      @include breakpoint(medium) {
+        height: 40vw;
+      }
+      @include breakpoint(large) {
+        height: 22vw;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 570px;
     }
   }
 
