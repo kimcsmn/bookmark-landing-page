@@ -3,22 +3,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include breakpoint(medium) {
-      nav {
-        display: flex;
-        width: 460px;
-        justify-content: space-between;
-        align-items: center;
-      }
+    padding: 30px 60px 60px 60px;
+    @include breakpoint(large) {
+      padding: 50px 170px 110px 170px;
     }
   }
 
   nav {
     display: none;
+    @include breakpoint(large) {
+      display: flex;
+      width: 460px;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .burger-menu {
     display: inline-block;
+    @include breakpoint(large) {
+      display: none;
+    }
   }
 
   .logo {
