@@ -17,6 +17,7 @@
     order: 1;
     @include breakpoint(medium) {
       order: -1;
+      padding-bottom: 2em;
     }
 
     &::after {
@@ -24,10 +25,10 @@
       position: absolute;
       background-color: $softBlue;
       width: 40%;
-      height: 20vw;
+      height: 23vw;
       border-radius: 50vw 0 0 50vw;
       right: 0%;
-      top: 30%;
+      top: 23%;
       z-index: -1;
 
       @include breakpoint(medium) {

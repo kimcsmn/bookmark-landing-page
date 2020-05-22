@@ -52,6 +52,7 @@ h1 {
 
 h2 {
   font-size: 1.625rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 499px) {
@@ -63,7 +64,7 @@ h2 {
 p {
   font-size: 1.125rem;
   color: #9194a1;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 499px) {
@@ -218,6 +219,7 @@ header .logo {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    padding-bottom: 2em;
   }
 }
 
@@ -226,10 +228,10 @@ header .logo {
   position: absolute;
   background-color: #5368df;
   width: 40%;
-  height: 20vw;
+  height: 23vw;
   border-radius: 50vw 0 0 50vw;
   right: 0%;
-  top: 30%;
+  top: 23%;
   z-index: -1;
 }
 
@@ -272,77 +274,149 @@ header .logo {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 30px 85px 0 150px;
 }
 
-.feature .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  padding: 60px 25px;
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px 25px;
+  }
+}
+
+.feature {
+  position: relative;
 }
 
 .feature__body {
+  max-width: 600px;
   margin: 0 auto;
+  padding: 80px 0 60px 0;
+  text-align: center;
 }
 
-.feature__body__content {
-  max-width: 530px;
-  padding: 2em 0;
+@media screen and (max-width: 768px) {
+  .feature__body {
+    padding: 110px 30px 40px 30px;
+  }
 }
 
-.feature nav {
-  padding: 2em 0;
+.feature__body p {
+  padding: 1em 0;
+}
+
+.feature__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2em;
 }
 
-@media screen and (max-width: 768px) {
-  .feature nav {
-    margin: 0 auto;
-    -webkit-box-orient: horizontal;
+@media screen and (max-width: 499px) {
+  .feature__nav ul {
+    border-top: solid 1px #9194a1;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 
-.feature nav li {
-  border-top: solid 1px #9194a1;
-  padding: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .feature nav li {
-    border-top: none;
-    border-bottom: solid 1px #9194a1;
-  }
-}
-
-.feature nav li:last-child {
+.feature__nav li {
   border-bottom: solid 1px #9194a1;
+  padding: 1em 2em;
 }
 
-.feature nav a {
+.feature__nav li:active {
+  border-bottom: solid 2px #fa5757;
+}
+
+.feature__nav a {
   color: #9194a1;
-  padding: inherit;
   font-size: 1rem;
 }
 
-.feature nav a:hover {
+.feature__nav a:hover {
   color: #fa5757;
-  border-bottom: solid 2px #fa5757;
+}
+
+@media screen and (max-width: 768px) {
+  .feature__nav a:active {
+    border-bottom: solid 2px #fa5757;
+  }
+}
+
+.feature .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .feature .tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.feature .tab::after {
+  content: "";
+  position: absolute;
+  background-color: #5368df;
+  width: 40%;
+  height: 22vw;
+  border-radius: 0 50vw 50vw 0;
+  left: 0%;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .feature .tab::after {
+    height: 35vw;
+    width: 50%;
+    bottom: 23%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .feature .tab::after {
+    width: 70%;
+    height: 45vw;
+    bottom: 25%;
+  }
+}
+
+.feature .tab img {
+  max-width: 540px;
+  width: 100%;
+}
+
+.feature .tab__body {
+  max-width: 435px;
+  height: 230px;
+}
+
+@media screen and (max-width: 768px) {
+  .feature .tab__body {
+    text-align: center;
+    padding: 2em 0;
+  }
+}
+
+.feature .tab__body p {
+  padding: 1em 0;
 }
 /*# sourceMappingURL=main.css.map */
