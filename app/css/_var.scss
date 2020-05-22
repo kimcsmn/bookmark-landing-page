@@ -2,7 +2,7 @@
 // Layout
 $breakpoints: (
   small: 499px,
-  medium: 699px,
+  medium: 768px,
   large: 999px,
   xlarge: 1399px,
 );
@@ -10,7 +10,7 @@ $breakpoints: (
 @mixin breakpoint($size) {
   $breakpoint-value: map-get($breakpoints, $size);
 
-  @media screen and (min-width: $breakpoint-value) {
+  @media screen and (max-width: $breakpoint-value) {
     @content;
   }
 }

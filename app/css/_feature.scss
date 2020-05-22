@@ -1,0 +1,52 @@
+.feature {
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 25px;
+  }
+
+  &__body {
+    margin: 0 auto;
+    &__content {
+      max-width: 530px;
+      padding: 2em 0;
+    }
+  }
+
+  nav {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(medium) {
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    li {
+      border-top: solid 1px $grayishBlue;
+      padding: 1em;
+
+      @include breakpoint(medium) {
+        border-top: none;
+        border-bottom: solid 1px $grayishBlue;
+      }
+
+      &:last-child {
+        border-bottom: solid 1px $grayishBlue;
+      }
+    }
+
+    a {
+      color: $grayishBlue;
+      padding: inherit;
+      font-size: 1rem;
+      &:hover {
+        color: $softRed;
+        border-bottom: solid 2px $softRed;
+      }
+    }
+  }
+}

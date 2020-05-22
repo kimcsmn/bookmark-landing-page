@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   // outline: 1px solid red;
 }
 
@@ -32,26 +33,31 @@ a {
   }
 }
 
+li {
+  list-style-type: none;
+}
+
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.375rem;
   font-weight: 500;
-  @include breakpoint(large) {
-    font-size: 2.375rem;
+  @include breakpoint(small) {
+    font-size: 1.5rem;
   }
 }
 
 h2 {
-  font-size: 1rem;
-  @include breakpoint(large) {
-    font-size: 1.625rem;
+  font-size: 1.625rem;
+  @include breakpoint(small) {
+    font-size: 1rem;
   }
 }
 
 p {
-  font-size: 0.75rem;
+  font-size: 1.125rem;
   color: $grayishBlue;
-  @include breakpoint(large) {
-    font-size: 1.125rem;
+  line-height: 1.8;
+  @include breakpoint(small) {
+    font-size: 0.75rem;
   }
 }
 

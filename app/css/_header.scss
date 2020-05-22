@@ -4,36 +4,34 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 30px 60px 60px 60px;
-    @include breakpoint(large) {
-      padding: 50px 170px 110px 170px;
+    padding: 50px 170px 110px 170px;
+    @include breakpoint(medium) {
+      padding: 30px 30px 60px 60px;
+    }
+    @include breakpoint(small) {
+      padding: 30px 60px 60px 60px;
     }
   }
 
   nav {
-    display: none;
-    @include breakpoint(large) {
-      display: flex;
-      width: 460px;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  .burger-menu {
-    display: inline-block;
-    @include breakpoint(large) {
+    display: flex;
+    width: 460px;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(medium) {
       display: none;
     }
   }
 
-  .logo {
-    width: 125px;
-    height: 15px;
-    object-fit: contain;
-    @include breakpoint(small) {
-      width: 150px;
-      height: 30px;
+  .burger-menu {
+    display: none;
+    @include breakpoint(medium) {
+      display: inline-block;
     }
+  }
+
+  .logo {
+    max-width: 150px;
+    object-fit: contain;
   }
 }
