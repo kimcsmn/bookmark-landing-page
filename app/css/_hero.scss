@@ -44,7 +44,6 @@
 
   .hero-body {
     max-width: 500px;
-    // max-height: 300px;
     text-align: center;
     @include breakpoint(large) {
       max-width: 490px;
