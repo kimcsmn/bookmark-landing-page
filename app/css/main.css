@@ -84,6 +84,7 @@ button {
   padding: 1em 2em;
   font-family: "Rubik", sans-serif;
   font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .red-btn {
@@ -287,7 +288,7 @@ header .logo {
 
 @media screen and (max-width: 499px) {
   .container {
-    padding: 30px 25px;
+    padding: 30px 30px;
   }
 }
 
@@ -434,7 +435,7 @@ header .logo {
 
 @media screen and (max-width: 768px) {
   .extension .container {
-    padding: 120px 25px;
+    padding: 120px 30px;
   }
 }
 
@@ -449,12 +450,16 @@ header .logo {
 }
 
 .extension .download {
-  padding: 2em 1em;
+  padding: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin: 0 auto;
+  height: 500px;
+  max-width: 850px;
+  justify-items: space-between;
+  overflow: visible;
 }
 
 @media screen and (max-width: 768px) {
@@ -463,13 +468,11 @@ header .logo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 100%;
   }
 }
 
-.extension .download .browser {
+.extension .download .card {
   position: relative;
   padding: 1em;
   border-radius: 15px;
@@ -484,8 +487,32 @@ header .logo {
           flex-direction: column;
   text-align: center;
   line-height: 2;
-  margin: 1em;
-  width: 100%;
+  margin: 1em auto;
+  max-height: 350px;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 499px) {
+  .extension .download .card {
+    margin: 1em auto;
+    width: 100%;
+  }
+}
+
+.extension .download .card:nth-child(1) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.extension .download .card:nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.extension .download .card:nth-child(3) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .extension .download img {

@@ -2,7 +2,7 @@
   .container {
     padding: 150px 240px 240px 240px;
     @include breakpoint(medium) {
-      padding: 120px 25px;
+      padding: 120px 30px;
     }
   }
 
@@ -17,17 +17,21 @@
   }
 
   .download {
-    padding: 2em 1em;
+    padding: 2em 0;
     display: flex;
     text-align: center;
     margin: 0 auto;
+    height: 500px;
+    max-width: 850px;
+    justify-items: space-between;
+    overflow: visible;
 
     @include breakpoint(medium) {
       flex-direction: column;
-      align-items: center;
+      height: 100%;
     }
 
-    .browser {
+    .card {
       position: relative;
       padding: 1em;
       border-radius: 15px;
@@ -36,8 +40,25 @@
       flex-direction: column;
       text-align: center;
       line-height: 2;
-      margin: 1em;
-      width: 100%;
+      margin: 1em auto;
+      max-height: 350px;
+      max-width: 300px;
+      @include breakpoint(small) {
+        margin: 1em auto;
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        align-self: flex-start;
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        align-self: flex-end;
+      }
     }
 
     img {
