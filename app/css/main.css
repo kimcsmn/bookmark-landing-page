@@ -283,10 +283,10 @@ header .logo {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 30px 85px 0 150px;
+  padding: 30px 100px 0 100px;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 768px) {
   .container {
     padding: 30px 30px;
   }
@@ -617,10 +617,13 @@ header .logo {
 
 .signup .container {
   margin: 0 auto;
+  min-height: 350px;
+  padding: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3em 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,52 +632,54 @@ header .logo {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  overflow: visible;
 }
 
-.email {
+.signup p,
+.signup h1 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding-bottom: 1em;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.signup .email {
   max-width: 290px;
   margin-right: 1em;
   border: solid 2px #fff;
 }
 
-.submit-btn {
+.signup .submit-btn {
   background-color: #fa5757;
   color: #fff;
   border-radius: 7px;
   border: solid 2px #fa5757;
 }
 
-.submit-btn:hover {
+.signup .submit-btn:hover {
   background-color: #fff;
   color: #fa5757;
 }
 
-.submit-btn:focus {
+.signup .submit-btn:focus {
   border: solid 2px #fa5757;
   border-radius: 7px;
 }
 
-.email,
-.submit-btn {
+.signup .email,
+.signup .submit-btn {
   font-size: 1rem;
   border-radius: 7px;
   padding: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  .email,
-  .submit-btn {
+  .signup .email,
+  .signup .submit-btn {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1em;
   }
-}
-
-p,
-h1 {
-  color: #fff;
-  font-weight: 500;
-  padding-bottom: 1em;
 }
 /*# sourceMappingURL=main.css.map */
