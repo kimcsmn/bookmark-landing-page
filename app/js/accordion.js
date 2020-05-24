@@ -3,6 +3,7 @@ const acc = document.querySelector(".faq-body");
 acc.addEventListener("click", function (e) {
   // console.log(e.target);
 
+  e.preventDefault();
   const accBtn = e.target;
   accBtn.classList.toggle("active");
   const arrow = e.target.children[0];

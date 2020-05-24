@@ -1,11 +1,11 @@
 .faq {
   .container {
-    // padding: 100px 430px;
-    max-width: 600px;
+    max-width: 60%;
     text-align: center;
-  }
-  * {
-    // outline: solid 1px red;
+
+    @include breakpoint(medium) {
+      max-width: 100%;
+    }
   }
 
   .faq-intro {
@@ -26,6 +26,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
+    outline: none;
   }
 
   .accordion {
@@ -41,18 +42,28 @@
     margin: 3em auto;
   }
 
-  .arrow {
-    float: right;
-  }
-
   .panel {
-    // display: none;
+    display: none;
     text-align: left;
     padding: 1em 0;
     p {
       color: $grayishBlue;
-      font-size: 1rem;
+      font-size: 0.85rem;
       line-height: 2;
     }
+  }
+
+  .arrow {
+    float: right;
+  }
+
+  .reverse path {
+    transform: rotateX(160deg);
+    transform-origin: center;
+    stroke: $softRed;
+  }
+
+  .active {
+    color: $softRed;
   }
 }

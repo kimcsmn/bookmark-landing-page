@@ -539,8 +539,14 @@ header .logo {
 }
 
 .faq .container {
-  max-width: 600px;
+  max-width: 60%;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .faq .container {
+    max-width: 100%;
+  }
 }
 
 .faq .faq-intro {
@@ -567,6 +573,7 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1rem;
+  outline: none;
 }
 
 .faq .accordion {
@@ -582,18 +589,31 @@ header .logo {
   margin: 3em auto;
 }
 
-.faq .arrow {
-  float: right;
-}
-
 .faq .panel {
+  display: none;
   text-align: left;
   padding: 1em 0;
 }
 
 .faq .panel p {
   color: #9194a1;
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 2;
+}
+
+.faq .arrow {
+  float: right;
+}
+
+.faq .reverse path {
+  -webkit-transform: rotateX(160deg);
+          transform: rotateX(160deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  stroke: #fa5757;
+}
+
+.faq .active {
+  color: #fa5757;
 }
 /*# sourceMappingURL=main.css.map */
