@@ -538,15 +538,11 @@ header .logo {
   z-index: -1;
 }
 
-.faq .container {
-  max-width: 60%;
+.faq .faq-intro,
+.faq .faq-body {
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .faq .container {
-    max-width: 100%;
-  }
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .faq .faq-intro {
@@ -572,6 +568,7 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
   font-size: 1rem;
   outline: none;
 }
@@ -592,17 +589,13 @@ header .logo {
 .faq .panel {
   display: none;
   text-align: left;
-  padding: 1em 0;
+  padding: 0 0 1em 0;
 }
 
 .faq .panel p {
   color: #9194a1;
   font-size: 0.85rem;
   line-height: 2;
-}
-
-.faq .arrow {
-  float: right;
 }
 
 .faq .reverse path {

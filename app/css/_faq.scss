@@ -1,11 +1,9 @@
 .faq {
-  .container {
-    max-width: 60%;
+  .faq-intro,
+  .faq-body {
     text-align: center;
-
-    @include breakpoint(medium) {
-      max-width: 100%;
-    }
+    max-width: 550px;
+    margin: 0 auto;
   }
 
   .faq-intro {
@@ -25,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
     font-size: 1rem;
     outline: none;
   }
@@ -45,16 +44,12 @@
   .panel {
     display: none;
     text-align: left;
-    padding: 1em 0;
+    padding: 0 0 1em 0;
     p {
       color: $grayishBlue;
       font-size: 0.85rem;
       line-height: 2;
     }
-  }
-
-  .arrow {
-    float: right;
   }
 
   .reverse path {
