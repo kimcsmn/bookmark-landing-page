@@ -1,0 +1,56 @@
+.signup {
+  background-color: $softBlue;
+  margin-top: 50px;
+  .container {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: visible;
+  }
+}
+
+.email {
+  max-width: 290px;
+  margin-right: 1em;
+  border: solid 2px #fff;
+}
+
+.submit-btn {
+  background-color: $softRed;
+  color: #fff;
+  border-radius: 7px;
+  border: solid 2px $softRed;
+
+  &:hover {
+    background-color: #fff;
+    color: $softRed;
+  }
+
+  &:focus {
+    border: solid 2px $softRed;
+    border-radius: 7px;
+  }
+}
+
+.email,
+.submit-btn {
+  font-size: 1rem;
+  border-radius: 7px;
+  padding: 1em;
+
+  @include breakpoint(medium) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+p,
+h1 {
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
