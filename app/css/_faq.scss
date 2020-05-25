@@ -39,6 +39,10 @@
 
   .blue-btn {
     margin: 3em auto;
+    color: #fff;
+    &:hover {
+      color: $softBlue;
+    }
   }
 
   .panel {

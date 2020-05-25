@@ -1,0 +1,54 @@
+footer {
+  background-color: $veryDarkBlue;
+
+  .container {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(medium) {
+      flex-direction: column;
+      text-align: center;
+      height: 300px;
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint(medium) {
+      flex-direction: column;
+    }
+    a {
+      padding: 1em 3em;
+      color: #fff;
+      &:hover {
+        color: $softRed;
+      }
+    }
+
+    img {
+      object-fit: contain;
+      margin: 1em;
+    }
+  }
+
+  .social {
+    svg {
+      margin: 0.5em 0 0 1em;
+      object-fit: contain;
+
+      path:hover {
+        fill: $softRed;
+      }
+
+      @include breakpoint(medium) {
+        margin: 1em;
+      }
+    }
+  }
+}
