@@ -3,9 +3,11 @@ footer {
 
   .container {
     display: flex;
-    margin: 30px auto;
+    height: 100px;
+    // padding: 1em 100px;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 
     @include breakpoint(medium) {
       flex-direction: column;
@@ -32,6 +34,7 @@ footer {
     }
 
     img {
+      vertical-align: middle;
       object-fit: contain;
       margin: 1em;
     }
@@ -39,8 +42,9 @@ footer {
 
   .social {
     svg {
-      margin: 0.5em 0 0 1em;
       object-fit: contain;
+      vertical-align: middle;
+      margin-left: 1em;
 
       path:hover {
         fill: $softRed;

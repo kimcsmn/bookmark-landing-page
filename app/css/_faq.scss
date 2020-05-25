@@ -26,6 +26,10 @@
     text-align: left;
     font-size: 1rem;
     outline: none;
+
+    @include breakpoint(medium) {
+      font-size: 0.85rem;
+    }
   }
 
   .accordion {

@@ -1,11 +1,10 @@
 .extension {
   .container {
-    padding: 150px 240px 240px 240px;
+    margin-top: 100px;
     @include breakpoint(medium) {
-      padding: 120px 30px;
+      margin-top: 50px;
     }
   }
-
   .extension-body {
     max-width: 550px;
     text-align: center;
