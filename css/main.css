@@ -132,19 +132,6 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding: 50px 170px 110px 170px;
-}
-
-@media screen and (max-width: 768px) {
-  header .container {
-    padding: 30px 30px 60px 60px;
-  }
-}
-
-@media screen and (max-width: 499px) {
-  header .container {
-    padding: 30px 60px 60px 60px;
-  }
 }
 
 header nav {

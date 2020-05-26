@@ -4,13 +4,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 50px 170px 110px 170px;
-    @include breakpoint(medium) {
-      padding: 30px 30px 60px 60px;
-    }
-    @include breakpoint(small) {
-      padding: 30px 60px 60px 60px;
-    }
   }
 
   nav {
