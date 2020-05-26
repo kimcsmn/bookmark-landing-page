@@ -4,7 +4,6 @@ footer {
   .container {
     display: flex;
     height: 100px;
-    // padding: 1em 100px;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
@@ -12,13 +11,12 @@ footer {
     @include breakpoint(medium) {
       flex-direction: column;
       text-align: center;
-      height: 300px;
+      height: 350px;
     }
   }
 
   .footer-nav {
     display: flex;
-    height: max-content;
     justify-content: space-between;
     align-items: center;
 
