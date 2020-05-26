@@ -134,11 +134,11 @@ header .container {
   margin: 0 auto;
 }
 
-header nav {
+header nav ul {
+  width: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 460px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -148,9 +148,40 @@ header nav {
 }
 
 @media screen and (max-width: 768px) {
-  header nav {
+  header nav ul {
     display: none;
   }
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 100%;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
+}
+
+header .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .burger-menu {
@@ -167,6 +198,7 @@ header .logo {
   max-width: 150px;
   -o-object-fit: contain;
      object-fit: contain;
+  display: inline;
 }
 
 .hero {
@@ -761,5 +793,99 @@ footer .social svg path:hover {
   footer .social svg {
     margin: 1em;
   }
+}
+
+header {
+  position: relative;
+  overflow: visible;
+}
+
+header .mobile-nav {
+  background-color: #252b46;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  margin: 0 auto;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 90%;
+}
+
+header .mobile-nav .logo path {
+  fill: #fff;
+}
+
+header .mobile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em 0;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+header .mobile-nav ul li {
+  width: 80%;
+  border-bottom: solid 1px #c9c9c9;
+  padding: 1em 0;
+}
+
+header .mobile-nav ul li:first-child {
+  border-top: solid 1px #c9c9c9;
+}
+
+header .mobile-nav ul a {
+  color: #c9c9c9;
+}
+
+header .mobile-nav ul .white-btn {
+  background-color: transparent;
+  border: solid 2px #fff;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1em 0;
+  margin: 3em 0;
+  width: 80%;
+}
+
+header .menu-btn,
+header .menu-close-btn {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .menu-close-btn {
+  display: none;
+}
+
+header .menu-btn {
+  background-color: #fff;
+}
+
+header .show {
+  display: inline-block;
+}
+
+header .hide {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,80 @@
+header {
+  position: relative;
+  overflow: visible;
+
+  .mobile-nav {
+    background-color: $veryDarkBlue;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    margin: 0 auto;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 90%;
+
+    .logo path {
+      fill: #fff;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 3em 0;
+      margin: 0 auto;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      li {
+        width: 80%;
+        border-bottom: solid 1px #c9c9c9;
+        padding: 1em 0;
+        &:first-child {
+          border-top: solid 1px #c9c9c9;
+        }
+      }
+
+      a {
+        color: #c9c9c9;
+      }
+
+      .white-btn {
+        background-color: transparent;
+        border: solid 2px #fff;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1em 0;
+        margin: 3em 0;
+        width: 80%;
+      }
+    }
+  }
+
+  .menu-btn,
+  .menu-close-btn {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+  }
+
+  .menu-close-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    background-color: #fff;
+  }
+
+  .show {
+    display: inline-block;
+  }
+
+  .hide {
+    display: none;
+  }
+}

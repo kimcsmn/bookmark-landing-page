@@ -6,14 +6,31 @@ header {
     margin: 0 auto;
   }
 
-  nav {
-    display: flex;
+  nav ul {
     width: 460px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     @include breakpoint(medium) {
       display: none;
     }
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    @include breakpoint(medium) {
+      width: 100%;
+      grid-template-columns: 1fr auto;
+    }
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .burger-menu {
@@ -26,5 +43,6 @@ header {
   .logo {
     max-width: 150px;
     object-fit: contain;
+    display: inline;
   }
 }
