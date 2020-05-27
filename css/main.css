@@ -342,6 +342,12 @@ header .logo {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 798px) {
+  .feature .feat-intro {
+    width: 100%;
+  }
+}
+
 .feature .feat-intro p {
   padding: 1em 0;
 }
