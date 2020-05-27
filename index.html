@@ -87,39 +87,70 @@
       <div class="feat-intro">
         <h1>Features</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-          expedita facilis nobis totam eaque, iusto illo ratione veniam
-          asperiores accusantium sed enim rerum eos quis provident! Nobis iure
-          quia omnis porro iusto ullam natus cumque eveniet est. Aperiam,
-          expedita tenetur.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+          ipsa, harum velit dolore veritatis cupiditate veniam molestias
+          eligendi eveniet nobis distinctio dolorem assumenda obcaecati sunt
+          quia officia eum corrupti magnam cum pariatur?
         </p>
       </div>
 
       <ul class="tab">
-        <li class="panel-1 active">
+        <li class="active" data-target="#panel-1">
           Simple Bookmarking
         </li>
-        <li class="panel-2">
+        <li data-target="#panel-2">
           Speedy Searching
         </li>
-        <li class="panel-3">
+        <li data-target="#panel-3">
           Easy Sharing
         </li>
       </ul>
 
       <div class="tab-content">
-        <div class="panel panel-1">
+        <div class="panel active" id="panel-1">
           <div class="panel-img">
             <img src="./assets/images/illustration-features-tab-1.svg" alt="" />
             <div class="img-bg"></div>
           </div>
-
           <div class="panel-info">
             <h2>Bookmark in one click</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               cumque alias labore provident sed aliquid, sequi corrupti illum
               optio sint.
+            </p>
+            <button class="btn blue-btn">More info</button>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-2">
+          <div class="panel-img">
+            <img src="./assets/images/illustration-features-tab-2.svg" alt="" />
+            <div class="img-bg"></div>
+          </div>
+          <div class="panel-info">
+            <h2>Intelligent search</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad
+              est dignissimos libero, ut, dolorem voluptate omnis ullam
+              perferendis ea hic nostrum similique molestias et repellat
+              accusantium, quod doloribus! Cupiditate?
+            </p>
+            <button class="btn blue-btn">More info</button>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-3">
+          <div class="panel-img">
+            <img src="./assets/images/illustration-features-tab-3.svg" alt="" />
+            <div class="img-bg"></div>
+          </div>
+          <div class="panel-info">
+            <h2>Share your bookmarks</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              odio et perspiciatis laborum, sequi consectetur architecto?
+              Doloremque est quis ullam nisi corrupti.
             </p>
             <button class="btn blue-btn">More info</button>
           </div>
@@ -341,5 +372,6 @@
     <!-- script goes here -->
     <script src="./js/accordion.js"></script>
     <script src="./js/mobile-nav.js"></script>
+    <script src="./js/tab.js"></script>
   </body>
 </html>
