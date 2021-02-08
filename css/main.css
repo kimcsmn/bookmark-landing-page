@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  outline: 1px solid red;
 }
 
 html {
@@ -211,6 +212,7 @@ header .logo {
 }
 
 .hero .container {
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,6 +240,7 @@ header .logo {
 }
 
 .hero .image {
+  width: 600px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -256,11 +259,11 @@ header .logo {
   content: "";
   position: absolute;
   background-color: #5368df;
-  width: 40%;
-  height: 23vw;
+  width: 30%;
+  height: 15vw;
   border-radius: 50vw 0 0 50vw;
   right: 0%;
-  top: 23%;
+  top: 45%;
   z-index: -1;
 }
 
