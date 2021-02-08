@@ -12,11 +12,12 @@
     @include breakpoint(medium) {
       padding: 0 30px 0 30px;
       flex-direction: column;
+      height: 80vh;
     }
   }
 
   .image {
-    width: 600px;
+    max-width: 600px;
     order: 1;
     @include breakpoint(medium) {
       order: -1;
@@ -58,6 +59,7 @@
 
     @include breakpoint(small) {
       text-align: center;
+      overflow: hidden;
     }
   }
 

@@ -235,11 +235,12 @@ header .logo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 80vh;
   }
 }
 
 .hero .image {
-  width: 600px;
+  max-width: 600px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -295,6 +296,7 @@ header .logo {
 @media screen and (max-width: 530px) {
   .hero .hero-body {
     text-align: center;
+    overflow: hidden;
   }
 }
 
@@ -501,7 +503,7 @@ header .logo {
 
 @media screen and (max-width: 798px) {
   .extension .container {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 
