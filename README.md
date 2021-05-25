@@ -1,4 +1,2 @@
-# bookmark-manager-landing-page
-
-my solution to bookmark manager landing page challenge
+# Bookmark Manager Landing Page
 https://kimcsmn.github.io/bookmark-manager-landing-page/
